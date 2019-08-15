@@ -1,0 +1,114 @@
+.menu{
+    flex:70%;
+    padding:0.6em;
+    background-color:#f1f1f1;
+    color: blue;
+    overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.menu a {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.menu a:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.menu a.active {
+  background-color: #ccc;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create a column layout with Flexbox */
+  .row {
+    display: flex;
+  }
+  
+  /* Left column (menu) */
+  .left {
+    flex: 35%;
+    padding: 15px 0;
+  }
+  
+  .left h2 {
+    padding-left: 8px;
+  }
+  
+  /* Right column (page content) */
+  .right {
+    flex: 65%;
+    padding: 15px;
+  }
+  
+  /* Style the search box */
+  #mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style the navigation menu inside the left column */
+  #myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block
+  }
+  
+  #myMenu li a:hover {
+    background-color: #eee;
+  }
+
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
